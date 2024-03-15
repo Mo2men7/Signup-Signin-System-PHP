@@ -18,7 +18,9 @@
         <?php
         error_reporting(E_ERROR | E_PARSE); // to ignore warrnings in this page
         if($_GET){
-             if($_GET["done"]=="true"){
+            if($_GET["same"]=="true"){
+                echo"<div class='bg-danger text-light text-center'><p>email is already exists</p></div>";
+            }else if($_GET["done"]=="true"){
                 echo"<div class='bg-success text-light text-center'><p>Successfully added the new user</p></div>";
             }
         }
